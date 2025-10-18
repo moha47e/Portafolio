@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>Ayoub Jerari — ASIR</title>
+  <meta name="theme-color" content="#0b0d12" />
+  <link rel="icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Dynamic Island como NAV -->
+  <div class="island" id="island" aria-live="polite">
+    <button class="pill" id="islandBtn" aria-expanded="false">
+      <span class="dot" aria-hidden="true"></span>
+      <span class="brand-left">AYOUB JERARI</span>
+
+      <span class="label-compact">AYOUB JERARI</span>
+
+      <nav class="label-expanded pill-nav" aria-label="Navegación">
+        <a href="#proyectos">Proyectos</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#skills">Skills</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <span class="switch" id="themeToggle" aria-label="Cambiar tema"><i></i></span>
+    </button>
+  </div>
+
+  <main>
+    <!-- HERO con foto paralela y logos -->
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1>Hola, soy <span class="accent">Ayoub Jerari</span></h1>
+          <p class="lead">Administro sistemas y redes. Linux/Windows, virtualización, automatización y seguridad.</p>
+          <div class="cta">
+            <a class="btn" href="#proyectos">Ver proyectos</a>
+            <a class="btn ghost" href="CV.pdf" target="_blank" rel="noopener">Descargar CV</a>
+          </div>
+
+          <!-- Logos de tecnologías principales -->
+          <ul class="logo-row">
+            <li><img src="img/logos/linux.svg" alt="Linux"></li>
+            <li><img src="img/logos/windows.svg" alt="Windows Server"></li>
+            <li><img src="img/logos/docker.svg" alt="Docker"></li>
+            <li><img src="img/logos/nginx.svg" alt="Nginx"></li>
+            <li><img src="img/logos/pfsense.svg" alt="pfSense"></li>
+            <li><img src="img/logos/git.svg" alt="Git"></li>
+          </ul>
+        </div>
+
+        <figure class="hero-photo glass">
+          <img src="img/foto.jpg" alt="Foto de Ayoub Jerari">
+        </figure>
+      </div>
+    </section>
+
+    <!-- EXPERIENCIA: dos cajas -->
+    <section id="experiencia" class="section">
+      <h2>Experiencia</h2>
+      <div class="grid exp-grid">
+        <article class="card exp">
+          <header class="exp-head">
+            <div>
+              <h3>TechNet Solutions</h3>
+              <p class="muted">Madrid, España • 2024–2025</p>
+            </div>
+            <span class="badge">ASIR Junior</span>
+          </header>
+          <ul class="tasks">
+            <li>Administración de AD DS, DNS y GPO.</li>
+            <li>Despliegue de VPN con pfSense y segmentación VLAN.</li>
+            <li>Automatización básica con scripts Bash y PowerShell.</li>
+          </ul>
+        </article>
+
+        <article class="card exp">
+          <header class="exp-head">
+            <div>
+              <h3>Cloud Iberia</h3>
+              <p class="muted">Valencia, España • 2023–2024</p>
+            </div>
+            <span class="badge">SysAdmin Trainee</span>
+          </header>
+          <ul class="tasks">
+            <li>Contenedorización de servicios web con Docker + Nginx.</li>
+            <li>Backups incrementales y monitorización básica.</li>
+            <li>Mantenimiento de redes: DHCP, routing y firewall.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- SKILLS por cajas con logos -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="grid skills-grid">
+        <article class="card skill">
+          <h3>Redes</h3>
+          <ul class="logo-grid">
+            <li><img src="img/logos/dns.svg" alt="DNS"></li>
+            <li><img src="img/logos/dhcp.svg" alt="DHCP"></li>
+            <li><img src="img/logos/pfsense.svg" alt="pfSense"></li>
+            <li><img src="img/logos/wireguard.svg" alt="WireGuard"></li>
+          </ul>
+        </article>
+
+        <article class="card skill">
+          <h3>Sistemas</h3>
+          <ul class="logo-grid">
+            <li><img src="img/logos/linux.svg" alt="Linux"></li>
+            <li><img src="img/logos/windows.svg" alt="Windows Server"></li>
+            <li><img src="img/logos/ad.svg" alt="Active Directory"></li>
+            <li><img src="img/logos/bash.svg" alt="Bash"></li>
+          </ul>
+        </article>
+
+        <article class="card skill">
+          <h3>Cloud</h3>
+          <ul class="logo-grid">
+            <li><img src="img/logos/aws.svg" alt="AWS"></li>
+            <li><img src="img/logos/azure.svg" alt="Azure"></li>
+            <li><img src="img/logos/cloudflare.svg" alt="Cloudflare"></li>
+          </ul>
+        </article>
+
+        <article class="card skill">
+          <h3>Programación</h3>
+          <ul class="logo-grid">
+            <li><img src="img/logos/js.svg" alt="JavaScript"></li>
+            <li><img src="img/logos/python.svg" alt="Python"></li>
+            <li><img src="img/logos/powershell.svg" alt="PowerShell"></li>
+          </ul>
+        </article>
+
+        <article class="card skill">
+          <h3>Bases de datos</h3>
+          <ul class="logo-grid">
+            <li><img src="img/logos/mysql.svg" alt="MySQL"></li>
+            <li><img src="img/logos/mariadb.svg" alt="MariaDB"></li>
+            <li><img src="img/logos/sqlite.svg" alt="SQLite"></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROYECTOS: dos cajas -->
+    <section id="proyectos" class="section">
+      <h2>Proyectos</h2>
+      <div class="grid">
+        <article class="card project">
+          <img src="img/proyectos/proj1.jpg" alt="Captura del Proyecto 1">
+          <div class="project-body">
+            <h3>Dominio AD + GPO</h3>
+            <p>Infra de dominio con DNS integrado, OU y GPO de endurecimiento. Despliegue reproducible.</p>
+            <div class="row">
+              <a class="btn" href="https://github.com/tuusuario/proyecto1" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <img src="img/proyectos/proj2.jpg" alt="Captura del Proyecto 2">
+          <div class="project-body">
+            <h3>Docker + Nginx + CI</h3>
+            <p>Web estática con reverse proxy y pipeline de despliegue desde Git. Logs y backups.</p>
+            <div class="row">
+              <a class="btn" href="https://github.com/tuusuario/proyecto2" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACTO: una caja con iconos -->
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+      <article class="card contact">
+        <ul class="socials">
+          <li><a aria-label="LinkedIn" href="https://www.linkedin.com/in/tuusuario" target="_blank" rel="noopener">
+            <img src="img/logos/linkedin.svg" alt="LinkedIn"></a></li>
+          <li><a aria-label="Gmail" href="mailto:tuemail@dominio.com">
+            <img src="img/logos/gmail.svg" alt="Gmail"></a></li>
+          <li><a aria-label="Instagram" href="https://instagram.com/tuusuario" target="_blank" rel="noopener">
+            <img src="img/logos/instagram.svg" alt="Instagram"></a></li>
+          <li><a aria-label="WhatsApp" href="https://wa.me/34600000000" target="_blank" rel="noopener">
+            <img src="img/logos/whatsapp.svg" alt="WhatsApp"></a></li>
+          <li><a aria-label="GitHub" href="https://github.com/tuusuario" target="_blank" rel="noopener">
+            <img src="img/logos/github.svg" alt="GitHub"></a></li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p>© <span id="year"></span> Ayoub Jerari — Infra & NetOps</p>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
