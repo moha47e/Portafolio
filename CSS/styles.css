@@ -128,7 +128,9 @@ h1{font-size:clamp(28px,5vw,52px); margin:0}
 .accent{background:linear-gradient(45deg,var(--accent),var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent}
 .lead{color:var(--muted); margin:8px 0 16px}
 .btn{display:inline-block; padding:12px 16px; border-radius:16px; background:linear-gradient(45deg,var(--accent),var(--accent2)); color:#001; font-weight:700; text-decoration:none; box-shadow:var(--shadow)}
+.btn:hover{box-shadow:0 14px 40px rgba(0,0,0,.35); transform:translateY(-2px); transition:transform .2s ease, box-shadow .2s ease;}
 .btn.ghost{background:transparent; color:var(--accent); border:1px solid var(--accent)}
+.btn.ghost:hover{background:var(--accent); color:#001}
 .row{display:flex; gap:8px; flex-wrap:wrap}
 
 /* ========== HERO con foto y logos ========== */
@@ -216,7 +218,7 @@ h1{font-size:clamp(28px,5vw,52px); margin:0}
 /* ========== Contacto ========== */
 .contact{display:flex; justify-content:center}
 .socials{display:flex; gap:14px; list-style:none; padding:6px; margin:0; flex-wrap:wrap}
-.socials img{width:28px; height:28px; object-fit:contain; transition:transform .12s ease}
+.socials img{width:35px; height:35px; object-fit:contain; transition:transform .12s ease}
 @media (hover:hover){ .socials a:hover img{ transform:translateY(-1px) } }
 
 /* ========== Terminal opcional ========== */
@@ -301,4 +303,43 @@ img.logo, .logo-row img, .logo-grid img, .pill-body img, .socials img {
 /* responsive por si el título es más largo en móviles */
 @media (max-width:600px){
   .pill-left{ min-width:110px; }
+}
+.contact-card{
+  position:relative;
+  overflow:hidden;
+  padding:14px 18px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  border-radius:24px;
+  border:1px solid var(--border);
+  background:var(--glass);
+  backdrop-filter:saturate(140%) blur(12px);
+  box-shadow:var(--shadow);
+  transition:height .3s ease, padding .3s ease;
+}
+.contact-compact img{
+  width:32px; height:32px; border-radius:8px;
+  transition:transform .2s ease, opacity .2s ease;
+}
+.contact-expanded{
+  position:absolute; inset:0; display:flex;
+  align-items:center; justify-content:center;
+  gap:18px; opacity:0; pointer-events:none;
+  transition:opacity .25s ease;
+}
+.contact-expanded a{
+  padding:8px 14px; border-radius:12px;
+  background:var(--glass); border:1px solid var(--border);
+  color:var(--text); text-decoration:none;
+  font-weight:600; transition:background .2s ease, border-color .2s ease;
+}
+@media(hover:hover){
+  .contact-card:hover .contact-compact img{opacity:0; transform:scale(.7);}
+  .contact-card:hover .contact-expanded{opacity:1; pointer-events:auto;}
+  .contact-expanded a:hover{
+    background:color-mix(in oklab,var(--glass) 70%,var(--accent));
+    border-color:var(--accent);
+  }
 }
