@@ -3,29 +3,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <title>Ayoub Jerari — ASIR</title>
+  <title>Ayoub Jerari</title>
   <meta name="theme-color" content="#0b0d12" />
   <link rel="icon" href="img/favicon.png" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="CSS/styles.css" />
 </head>
 <body>
 
   <!-- Dynamic Island como NAV -->
   <div class="island" id="island" aria-live="polite">
     <button class="pill" id="islandBtn" aria-expanded="false">
-      <span class="dot" aria-hidden="true"></span>
-      <span class="brand-left">AYOUB JERARI</span>
+    <span class="dot" aria-hidden="true"></span>
+    <img class="brand-logo" src="img/foto.png" alt="Logo">
+    <span class="brand-left">AYOUB JERARI</span>
 
-      <span class="label-compact">AYOUB JERARI</span>
 
-      <nav class="label-expanded pill-nav" aria-label="Navegación">
+    <span class="label-compact">AYOUB JERARI</span>
+
+    <nav class="label-expanded pill-nav" aria-label="Navegación">
         <a href="#proyectos">Proyectos</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#skills">Skills</a>
         <a href="#contacto">Contacto</a>
-      </nav>
-
-      <span class="switch" id="themeToggle" aria-label="Cambiar tema"><i></i></span>
+    </nav>
+    <select id="langSelect" class="lang" aria-label="Idioma">
+        <option value="ca">CAT</option>
+        <option value="es" selected>ES</option>
+        <option value="en">EN</option>
+        <option value="fr">FR</option>
+        <option value="de">DE</option>
+    </select>
+        <span class="switch" id="themeToggle" aria-label="Cambiar tema"><i></i></span>
     </button>
   </div>
 
@@ -35,7 +43,7 @@
       <div class="hero-grid">
         <div class="hero-text">
           <h1>Hola, soy <span class="accent">Ayoub Jerari</span></h1>
-          <p class="lead">Administro sistemas y redes. Linux/Windows, virtualización, automatización y seguridad.</p>
+          <p class="lead">Especialista en soporte y administración IT, con experiencia en entornos corporativos y públicos. Gestiono sistemas Linux y Windows, redes, Microsoft 365, hardware y bases de datos, asegurando operaciones estables y eficientes. Me motiva resolver incidencias técnicas y mejorar la experiencia del usuario.</p>
           <div class="cta">
             <a class="btn" href="#proyectos">Ver proyectos</a>
             <a class="btn ghost" href="CV.pdf" target="_blank" rel="noopener">Descargar CV</a>
@@ -43,135 +51,289 @@
 
           <!-- Logos de tecnologías principales -->
           <ul class="logo-row">
-            <li><img src="img/logos/linux.svg" alt="Linux"></li>
-            <li><img src="img/logos/windows.svg" alt="Windows Server"></li>
-            <li><img src="img/logos/docker.svg" alt="Docker"></li>
-            <li><img src="img/logos/nginx.svg" alt="Nginx"></li>
-            <li><img src="img/logos/pfsense.svg" alt="pfSense"></li>
-            <li><img src="img/logos/git.svg" alt="Git"></li>
+            <li><img src="img/logos/windows.png" alt="Windows Server"></li>
+            <li><img src="img/logos/linux.png" alt="Linux"></li>
+            <li><img src="img/logos/Python.png" alt="Python"></li>
+            <li><img src="img/logos/sql.png" alt="SQL"></li>
+            <li><img src="img/logos/git_logo.png" alt="Git"></li>
+            <li><img src="img/logos/docker.png" alt="Docker"></li>
+            <li><img src="img/logos/Microsoft_365.png" alt="Microsoft 365"></li>
+
           </ul>
         </div>
 
         <figure class="hero-photo glass">
-          <img src="img/foto.jpg" alt="Foto de Ayoub Jerari">
+          <img src="img/foto.png" alt="Foto de Ayoub">
         </figure>
       </div>
     </section>
 
-    <!-- EXPERIENCIA: dos cajas -->
-    <section id="experiencia" class="section">
-      <h2>Experiencia</h2>
-      <div class="grid exp-grid">
-        <article class="card exp">
-          <header class="exp-head">
-            <div>
-              <h3>TechNet Solutions</h3>
-              <p class="muted">Madrid, España • 2024–2025</p>
-            </div>
-            <span class="badge">ASIR Junior</span>
-          </header>
-          <ul class="tasks">
-            <li>Administración de AD DS, DNS y GPO.</li>
-            <li>Despliegue de VPN con pfSense y segmentación VLAN.</li>
-            <li>Automatización básica con scripts Bash y PowerShell.</li>
-          </ul>
-        </article>
+<!-- EXPERIENCIA: dos cajas -->
+<section id="experiencia" class="section">
+  <h2>Experiencia</h2>
+  <div class="grid exp-grid">
 
-        <article class="card exp">
-          <header class="exp-head">
-            <div>
-              <h3>Cloud Iberia</h3>
-              <p class="muted">Valencia, España • 2023–2024</p>
-            </div>
-            <span class="badge">SysAdmin Trainee</span>
-          </header>
-          <ul class="tasks">
-            <li>Contenedorización de servicios web con Docker + Nginx.</li>
-            <li>Backups incrementales y monitorización básica.</li>
-            <li>Mantenimiento de redes: DHCP, routing y firewall.</li>
-          </ul>
-        </article>
+    <!-- HIPRA -->
+    <article class="card exp">
+      <header class="exp-head">
+        <div>
+            <h3>Laboratorios HIPRA, S.A.</h3>
+            <p class="muted">Amer / Aiguaviva, Girona</p>
+            <p class="muted">Junio 2025 - Presente</p>
+        </div>
+        <div class="exp-role">
+          <span class="badge">IT Workplace Intern</span>
+          <img src="img/logos/hipra.png" alt="HIPRA" class="exp-logo">
+        </div>
+      </header>
+      <ul class="tasks">
+        <li>Soporte técnico de segundo nivel (hardware, software y conectividad).</li>
+        <li>Gestión de incidencias mediante Remedy y SmartIT.</li>
+        <li>Preparación y despliegue de equipos (portátiles, IGEL, periféricos).</li>
+        <li>Configuración de móviles iOS/Android, teléfonos Cisco y escáneres.</li>
+        <li>Configuración de impresoras RFID y térmicas (Zebra, Honeywell).</li>
+        <li>Gestión de garantías, reparaciones y coordinación con proveedores.</li>
+        <li>Colaboración en políticas de seguridad, parches y actualizaciones.</li>
+      </ul>
+    </article>
+
+    <!-- AJUNTAMENT -->
+    <article class="card exp">
+      <header class="exp-head">
+        <div>
+          <h3>Ajuntament de Malgrat de Mar</h3>
+          <p class="muted">Malgrat de Mar, Barcelona</p>
+          <p class="muted">Noviembre 2023 – Abril 2024</p>
+        </div>
+        <div class="exp-role">
+          <span class="badge">IT Help Desk Intern</span>
+          <img src="img/logos/amm.jpg" alt="Ajuntament de Malgrat de Mar" class="exp-logo">
+        </div>
+      </header>
+      <ul class="tasks">
+        <li>Soporte técnico presencial y remoto para personal municipal.</li>
+        <li>Instalación y mantenimiento de equipos y periféricos.</li>
+        <li>Administración básica de sistemas y permisos de usuario.</li>
+        <li>Uso de herramientas Linux para diagnóstico y resolución de fallos.</li>
+        <li>Documentación de procedimientos y creación de guías de usuario.</li>
+        <li>Preparación y despliegue de equipos (PCs, portátiles, periféricos).</li>
+      </ul>
+    </article>
+
+  </div>
+</section>
+
+
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="skills-pills">
+    <!-- Redes -->
+    <button class="skill-pill" aria-expanded="false">
+      <div class="pill-left">
+        <img src="img/logos/Network.png" alt="" aria-hidden="true">
+        <span class="pill-title">Redes</span>
       </div>
-    </section>
-
-    <!-- SKILLS por cajas con logos -->
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <div class="grid skills-grid">
-        <article class="card skill">
-          <h3>Redes</h3>
-          <ul class="logo-grid">
-            <li><img src="img/logos/dns.svg" alt="DNS"></li>
-            <li><img src="img/logos/dhcp.svg" alt="DHCP"></li>
-            <li><img src="img/logos/pfsense.svg" alt="pfSense"></li>
-            <li><img src="img/logos/wireguard.svg" alt="WireGuard"></li>
-          </ul>
-        </article>
-
-        <article class="card skill">
-          <h3>Sistemas</h3>
-          <ul class="logo-grid">
-            <li><img src="img/logos/linux.svg" alt="Linux"></li>
-            <li><img src="img/logos/windows.svg" alt="Windows Server"></li>
-            <li><img src="img/logos/ad.svg" alt="Active Directory"></li>
-            <li><img src="img/logos/bash.svg" alt="Bash"></li>
-          </ul>
-        </article>
-
-        <article class="card skill">
-          <h3>Cloud</h3>
-          <ul class="logo-grid">
-            <li><img src="img/logos/aws.svg" alt="AWS"></li>
-            <li><img src="img/logos/azure.svg" alt="Azure"></li>
-            <li><img src="img/logos/cloudflare.svg" alt="Cloudflare"></li>
-          </ul>
-        </article>
-
-        <article class="card skill">
-          <h3>Programación</h3>
-          <ul class="logo-grid">
-            <li><img src="img/logos/js.svg" alt="JavaScript"></li>
-            <li><img src="img/logos/python.svg" alt="Python"></li>
-            <li><img src="img/logos/powershell.svg" alt="PowerShell"></li>
-          </ul>
-        </article>
-
-        <article class="card skill">
-          <h3>Bases de datos</h3>
-          <ul class="logo-grid">
-            <li><img src="img/logos/mysql.svg" alt="MySQL"></li>
-            <li><img src="img/logos/mariadb.svg" alt="MariaDB"></li>
-            <li><img src="img/logos/sqlite.svg" alt="SQLite"></li>
-          </ul>
-        </article>
+      <div class="pill-body">
+        <img src="img/logos/dns.png" alt="DNS" loading="lazy">
+        <img src="img/logos/dhcp.png" alt="DHCP" loading="lazy">
+        <img src="img/logos/pfsense.png" alt="pfSense" loading="lazy">
+        <img src="img/logos/cisco.png" alt="Cisco" loading="lazy">
+        <img src="img/logos/vlan.png" alt="VLAN" loading="lazy">
+        <img src="img/logos/ssh.png" alt="SSH" loading="lazy">
+        <img src="img/logos/nmap.png" alt="Nmap" loading="lazy">
+        <img src="img/logos/Wireshark.png" alt="Wireshark" loading="lazy">
       </div>
-    </section>
+    </button>
+
+    <!-- Sistemas -->
+    <button class="skill-pill" aria-expanded="false">
+      <div class="pill-left">
+        <img src="img/logos/os.png" alt="Operating Systems" aria-hidden="true">
+        <span class="pill-title">Sistemas</span>
+      </div>
+      <div class="pill-body">
+        <img src="img/logos/linux.png" alt="Linux" loading="lazy">
+        <img src="img/logos/windows.png" alt="Windows" loading="lazy">
+        <img src="img/logos/macos.png" alt="macOS" loading="lazy">
+        <img src="img/logos/android.png" alt="Android" loading="lazy">
+        <img src="img/logos/bash.png" alt="Bash" loading="lazy">
+        <img src="img/logos/Powershell.png" alt="PowerShell" loading="lazy">
+        <img src="img/logos/Microsoft_365.png" alt="Microsoft 365" loading="lazy">
+        <img src="img/logos/IOS.png" alt="iOS" loading="lazy">
+      </div>
+    </button>
+
+    <!-- Cloud -->
+    <button class="skill-pill" aria-expanded="false">
+      <div class="pill-left">
+        <img src="img/logos/cloud.png" alt="" aria-hidden="true">
+        <span class="pill-title">Cloud</span>
+      </div>
+      <div class="pill-body">
+        <img src="img/logos/Amazon.png" alt="AWS" loading="lazy">
+        <img src="img/logos/Azure.png" alt="Azure" loading="lazy">
+        <img src="img/logos/google.png" alt="Google Cloud" loading="lazy">
+        <img src="img/logos/cloudflare.png" alt="Cloudflare" loading="lazy">
+        <img src="img/logos/docker.png" alt="Docker" loading="lazy">
+        <img src="img/logos/Kubernetes.webp" alt="Kubernetes" loading="lazy">
+        <img src="img/logos/Terraform.webp" alt="Terraform" loading="lazy">
+        <img src="img/logos/Ansible.png" alt="Ansible" loading="lazy">
+      </div>
+    </button>
+
+    <!-- Programación -->
+    <button class="skill-pill" aria-expanded="false">
+      <div class="pill-left">
+        <img src="img/logos/code.png" alt="" aria-hidden="true">
+        <span class="pill-title">Coding</span>
+      </div>
+      <div class="pill-body">
+        <img src="img/logos/html-css.webp" alt="HTML5-CSS3" loading="lazy">
+        <img src="img/logos/Csharp.png" alt="CSharp" loading="lazy">
+        <img src="img/logos/Python.png" alt="Python" loading="lazy">
+        <img src="img/logos/js.png" alt="JavaScript" loading="lazy">
+        <img src="img/logos/PHP.png" alt="PHP" loading="lazy">
+        <img src="img/logos/JSON.png" alt="JSON" loading="lazy">
+        <img src="img/logos/github.png" alt="GitHub" loading="lazy">
+        <img src="img/logos/vscode.png" alt="VSCode" loading="lazy">
+      </div>
+    </button>
+
+    <!-- BBDD -->
+    <button class="skill-pill" aria-expanded="false">
+      <div class="pill-left">
+        <img src="img/logos/Database.png" alt="" aria-hidden="true">
+        <span class="pill-title">BBDD</span>
+      </div>
+      <div class="pill-body">
+        <img src="img/logos/sql.png" alt="SQL" loading="lazy">
+        <img src="img/logos/Postgresql.png" alt="PostgreSQL" loading="lazy">
+        <img src="img/logos/oracle.png" alt="Oracle" loading="lazy">
+        <img src="img/logos/mysql.png" alt="MySQL" loading="lazy">
+        <img src="img/logos/mongodb.png" alt="MongoDB" loading="lazy">
+        <img src="img/logos/Sqlite.png" alt="SQLite" loading="lazy">
+        <img src="img/logos/sqlserver.png" alt="SQL Server" loading="lazy">
+        <img src="img/logos/access.png" alt="Access" loading="lazy">
+      </div>
+    </button>
+
+    <!-- IA -->
+    <button class="skill-pill" aria-expanded="false">
+      <div class="pill-left">
+        <img src="img/logos/IA.png" alt="" aria-hidden="true">
+        <span class="pill-title">IA</span>
+      </div>
+      <div class="pill-body">
+        <img src="img/logos/n8n.png" alt="n8n" loading="lazy">
+        <img src="img/logos/ChatGPT.png" alt="ChatGPT" loading="lazy">
+        <img src="img/logos/gemini.webp" alt="Gemini" loading="lazy">
+        <img src="img/logos/copilot.webp" alt="Copilot" loading="lazy">
+        <img src="img/logos/ollama.png" alt="Ollama" loading="lazy">
+        <img src="img/logos/notion.png" alt="Notion" loading="lazy">
+        <img src="img/logos/meta.png" alt="Meta" loading="lazy">
+        <img src="img/logos/openai.png" alt="OpenAI" loading="lazy">
+      </div>
+    </button>
+
+    <!-- Languages -->
+    <button class="skill-pill" aria-expanded="false">
+      <div class="pill-left">
+        <img src="img/logos/prod.png" alt="" aria-hidden="true">
+        <span class="pill-title">Productivity</span>
+      </div>
+      <div class="pill-body">
+        <img src="img/logos/Microsoft_Project.png" alt="Microsoft Project" loading="lazy">
+        <img src="img/logos/excel.png" alt="Excel" loading="lazy">
+        <img src="img/logos/word.png" alt="Word" loading="lazy">
+        <img src="img/logos/teams.png" alt="Teams" loading="lazy">
+        <img src="img/logos/sharepoint.png" alt="SharePoint" loading="lazy">
+        <img src="img/logos/webex.png" alt="Webex" loading="lazy">
+        <img src="img/logos/clickup.png" alt="ClickUp" loading="lazy">
+        <img src="img/logos/jira-logo.png" alt="Jira" loading="lazy">
+      </div>
+    </button>
+
+    <!-- Languages -->
+    <button class="skill-pill" aria-expanded="false">
+      <div class="pill-left">
+        <img src="img/logos/language.png" alt="" aria-hidden="true">
+        <span class="pill-title">Idiomas</span>
+      </div>
+      <div class="pill-body">
+        <img src="img/logos/AR.png" alt="AR" loading="lazy">
+        <img src="img/logos/EN.png" alt="EN" loading="lazy">
+        <img src="img/logos/ES.webp" alt="ES" loading="lazy">
+        <img src="img/logos/CAT.png" alt="CAT" loading="lazy">
+        <img src="img/logos/FR.png" alt="FR" loading="lazy">
+        <img src="img/logos/DE.webp" alt="DE" loading="lazy">
+      </div>
+    </button>
+
+  </div>
+</section>
+
 
     <!-- PROYECTOS: dos cajas -->
     <section id="proyectos" class="section">
       <h2>Proyectos</h2>
       <div class="grid">
         <article class="card project">
-          <img src="img/proyectos/proj1.jpg" alt="Captura del Proyecto 1">
+          <img class="proj-img" src="img/project1.png" alt="Captura del Proyecto 1">
           <div class="project-body">
-            <h3>Dominio AD + GPO</h3>
-            <p>Infra de dominio con DNS integrado, OU y GPO de endurecimiento. Despliegue reproducible.</p>
+          <ul class="logo-row">
+            <li><img src="img/logos/linux.png" alt="Linux"></li>
+            <li><img src="img/logos/Postgresql.png" alt="PostgreSQL"></li>
+            <li><img src="img/logos/Python.png" alt="Python"></li>
+            <li><img src="img/logos/sql.png" alt="SQL"></li>
+            <li><img src="img/logos/Bash.png" alt="Bash"></li>
+            <li><img src="img/logos/git_logo.png" alt="Git"></li>
+            <li><img src="img/logos/github.png" alt="GitHub"></li>
+          </ul>
+            <h3>Hotel Management System</h3>
+            <p>Aplicación completa para la gestión integral de una cadena hotelera. Incluye control de reservas, clientes, personal, servicios y auditoría de datos. Desarrollada en Python (Tkinter) con base de datos PostgreSQL, incorpora seguridad, alta disponibilidad, replicación, backups automatizados y exportaciones en JSON/PDF.</p>
             <div class="row">
-              <a class="btn" href="https://github.com/tuusuario/proyecto1" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn" href="https://github.com/aybkh/HaramResorts" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
         </article>
 
         <article class="card project">
-          <img src="img/proyectos/proj2.jpg" alt="Captura del Proyecto 2">
+          <img class="proj-img" src="img/project2.png" alt="Captura del Proyecto 2">
           <div class="project-body">
-            <h3>Docker + Nginx + CI</h3>
-            <p>Web estática con reverse proxy y pipeline de despliegue desde Git. Logs y backups.</p>
+          <ul class="logo-row">
+            <li><img src="img/logos/unity.png" alt="Unity"></li>
+            <li><img src="img/logos/Csharp.png" alt="CSharp"></li>
+            <li><img src="img/logos/dotnet.svg" alt=".Net"></li>
+            <li><img src="img/logos/Visual_Studio.png" alt="Visual Studio"></li>
+            <li><img src="img/logos/git_logo.png" alt="Git"></li>
+            <li><img src="img/logos/github.png" alt="GitHub"></li>
+          </ul>
+            <h3>ERAY Slasher – Roguelite Shooter</h3>
+            <p>Juego de acción ambientado en el siglo XVIII, protagonizado por ERAY, un personaje con habilidades mágicas para defender su hogar. Incluye tres tipos de enemigos con ataques distintos y objetos que mejoran las estadísticas del jugador. Desarrollado con Unity, disponible en formato ejecutable gratuito.</p>
             <div class="row">
-              <a class="btn" href="https://github.com/tuusuario/proyecto2" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn" href="https://github.com/aybkh/ErAySlasher" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
         </article>
+
+        <article class="card project">
+          <img class="proj-img" src="img/project3.png" alt="Captura del Proyecto 3">
+          <div class="project-body">
+          <ul class="logo-row">
+            <li><img src="img/logos/unity.png" alt="Unity"></li>
+            <li><img src="img/logos/Csharp.png" alt="CSharp"></li>
+            <li><img src="img/logos/dotnet.svg" alt=".Net"></li>
+            <li><img src="img/logos/Visual_Studio.png" alt="Visual Studio"></li>
+            <li><img src="img/logos/git_logo.png" alt="Git"></li>
+            <li><img src="img/logos/github.png" alt="GitHub"></li>
+          </ul>
+            <h3>Spacecraft – Infinite Shooter Game</h3>
+            <p>Juego de acción en 2D desarrollado con Unity, donde los jugadores controlan una nave espacial que debe enfrentarse a oleadas de enemigos. El juego incluye power-ups y mejoras para la nave, así como un sistema de puntuación basado en la supervivencia y la destrucción de enemigos. Disponible en formato ejecutable gratuito.</p>
+            <div class="row">
+              <a class="btn" href="https://github.com/aybkh/HaramResorts" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
       </div>
     </section>
 

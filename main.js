@@ -79,3 +79,30 @@ if (revealTargets.length){
   }, { threshold: 0.12 });
   revealTargets.forEach(el=>io.observe(el));
 }
+// Skills: abrir/cerrar por tap en dispositivos sin hover
+document.querySelectorAll('.skill-pill').forEach(pill=>{
+  pill.addEventListener('click', ()=>{
+    if (window.matchMedia('(hover: none)').matches) {
+      const open = pill.classList.toggle('open');
+      pill.setAttribute('aria-expanded', String(open));
+    }
+  });
+});
+
+// Idioma: persistencia y atributo lang en <html>
+const langSel = document.getElementById('langSelect');
+if (langSel){
+  // valor inicial: localStorage o navegador
+  const savedLang = localStorage.getItem('lang')
+    || (navigator.language || 'es').slice(0,2);
+  if ([...langSel.options].some(o=>o.value===savedLang)) langSel.value = savedLang;
+  document.documentElement.setAttribute('lang', langSel.value);
+
+  langSel.addEventListener('change', () => {
+    const v = langSel.value;
+    document.documentElement.setAttribute('lang', v);
+    localStorage.setItem('lang', v);
+    // hook opcional: actualizar textos si luego añades i18n
+    // updateTexts(v)
+  });
+}
