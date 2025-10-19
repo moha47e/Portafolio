@@ -359,3 +359,15 @@ img.logo, .logo-row img, .logo-grid img, .pill-body img, .socials img {
 :root[data-theme="light"] .pill-body img,
 :root[data-theme="light"] .socials img { filter:none; opacity:1; }
 */
+/* Proyectos: 2 tarjetas por fila */
+#proyectos .grid{
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  gap: 18px;
+}
+
+/* Móvil: 1 por fila */
+@media (max-width: 700px){
+  #proyectos .grid{
+    grid-template-columns: 1fr !important;
+  }
+}
