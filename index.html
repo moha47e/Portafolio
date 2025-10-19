@@ -21,9 +21,9 @@
     <span class="label-compact">AYOUB JERARI</span>
 
     <nav class="label-expanded pill-nav" aria-label="Navegación">
-        <a href="#proyectos">Proyectos</a>
         <a href="#experiencia">Experiencia</a>
         <a href="#skills">Skills</a>
+        <a href="#proyectos">Proyectos</a>
         <a href="#contacto">Contacto</a>
     </nav>
     <select id="langSelect" class="lang" aria-label="Idioma">
@@ -76,7 +76,7 @@
     <!-- HIPRA -->
     <article class="card exp">
       <header class="exp-head">
-        <div>
+        <div class="exp-info">
             <h3>Laboratorios HIPRA, S.A.</h3>
             <p class="muted">Amer / Aiguaviva, Girona</p>
             <p class="muted">Junio 2025 - Presente</p>
@@ -100,14 +100,14 @@
     <!-- AJUNTAMENT -->
     <article class="card exp">
       <header class="exp-head">
-        <div>
+        <div class="exp-info">
           <h3>Ajuntament de Malgrat de Mar</h3>
           <p class="muted">Malgrat de Mar, Barcelona</p>
           <p class="muted">Noviembre 2023 – Abril 2024</p>
         </div>
         <div class="exp-role">
-          <span class="badge">IT Help Desk Intern</span>
-          <img src="img/logos/amm.jpg" alt="Ajuntament de Malgrat de Mar" class="exp-logo">
+          <span class="badge">IT Helpdesk Intern</span>
+          <img src="img/logos/amm.svg" alt="Ajuntament de Malgrat de Mar" class="exp-logo">
         </div>
       </header>
       <ul class="tasks">
@@ -139,7 +139,7 @@
         <img src="img/logos/dhcp.png" alt="DHCP" loading="lazy">
         <img src="img/logos/pfsense.png" alt="pfSense" loading="lazy">
         <img src="img/logos/cisco.png" alt="Cisco" loading="lazy">
-        <img src="img/logos/vlan.png" alt="VLAN" loading="lazy">
+        <img src="img/logos/grandstream.png" alt="Grandstream" loading="lazy">
         <img src="img/logos/ssh.png" alt="SSH" loading="lazy">
         <img src="img/logos/nmap.png" alt="Nmap" loading="lazy">
         <img src="img/logos/Wireshark.png" alt="Wireshark" loading="lazy">
@@ -236,10 +236,10 @@
       </div>
     </button>
 
-    <!-- Languages -->
+    <!-- Productivity -->
     <button class="skill-pill" aria-expanded="false">
       <div class="pill-left">
-        <img src="img/logos/prod.png" alt="" aria-hidden="true">
+        <img src="img/logos/productivity.png" alt="" aria-hidden="true">
         <span class="pill-title">Productivity</span>
       </div>
       <div class="pill-body">
@@ -251,6 +251,24 @@
         <img src="img/logos/webex.png" alt="Webex" loading="lazy">
         <img src="img/logos/clickup.png" alt="ClickUp" loading="lazy">
         <img src="img/logos/jira-logo.png" alt="Jira" loading="lazy">
+      </div>
+    </button>
+
+    <!-- Hardware Virtualization -->
+    <button class="skill-pill" aria-expanded="false">
+      <div class="pill-left">
+        <img src="img/logos/virtualization.png" alt="" aria-hidden="true">
+        <span class="pill-title">Hardware <br/> Virtualización</span>
+      </div>
+      <div class="pill-body">
+        <img src="img/logos/vmware.png" alt="VMware" loading="lazy">
+        <img src="img/logos/vbox.png" alt="VirtualBox" loading="lazy">
+        <img src="img/logos/zebra.png" alt="Zebra" loading="lazy">
+        <img src="img/logos/honeywell.png" alt="Honeywell" loading="lazy">
+        <img src="img/logos/raspberry.png" alt="Raspberry" loading="lazy">
+        <img src="img/logos/igel-logo.png" alt="IGEL" loading="lazy">
+        <img src="img/logos/paralels.png" alt="Paralels" loading="lazy">
+        <img src="img/logos/scada.png" alt="SCADA" loading="lazy">
       </div>
     </button>
 
@@ -278,6 +296,24 @@
     <section id="proyectos" class="section">
       <h2>Proyectos</h2>
       <div class="grid">
+        <article class="card project">
+          <img class="proj-img" src="img/project4.png" alt="Captura del Proyecto 4">
+          <div class="project-body">
+          <ul class="logo-row">
+            <li><img src="img/logos/html-css.webp" alt="HTML/CSS"></li>
+            <li><img src="img/logos/js.png" alt="JavaScript"></li>
+            <li><img src="img/logos/vscode.png" alt="Visual Studio Code"></li>
+            <li><img src="img/logos/ChatGPT.png" alt="ChatGPT"></li>
+            <li><img src="img/logos/git_logo.png" alt="Git"></li>
+            <li><img src="img/logos/github.png" alt="GitHub"></li>
+          </ul>
+            <h3>iOS Glass Portfolio — Personal Web Project</h3>
+            <p>Portafolio personal inspirado en la interfaz de iOS26, desarrollado con HTML, CSS y JavaScript. Presenta experiencia profesional, habilidades y proyectos en un diseño moderno y responsivo. Incluye modo oscuro/claro, selección de idioma y una "Dynamic Island" interactiva para navegación.</p>
+            <div class="row">
+              <a class="btn" href="https://github.com/aybkh/s" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
         <article class="card project">
           <img class="proj-img" src="img/project1.png" alt="Captura del Proyecto 1">
           <div class="project-body">
@@ -334,25 +370,48 @@
               <a class="btn" href="https://github.com/aybkh/spacecraft" target="_blank" rel="noopener">GitHub</a>
             </div>
           </div>
+        </article>
       </div>
     </section>
 
     <!-- CONTACTO: una caja con iconos -->
-<section id="contacto" class="section">
-  <h2>Contacto</h2>
-  <div class="card contact-card">
-    <div class="contact-compact">
-      <img src="img/logos/linkedin.png" alt="LinkedIn">
-      <img src="img/logos/mail.png" alt="Email">
-      <img src="img/logos/github.png" alt="GitHub">
-    </div>
-    <div class="contact-expanded">
-      <a href="https://linkedin.com/in/ayoub-jerari" target="_blank">LinkedIn</a>
-      <a href="mailto:ayoubjerari47@gmail.com">Email</a>
-      <a href="https://github.com/aybkh" target="_blank">GitHub</a>
-    </div>
-  </div>
-</section>
+    <section id="contacto" class="section">
+      <h2>Contacto</h2>
+
+      <div class="card contact-card" aria-live="polite">
+        <!-- Vista compacta -->
+        <div class="contact-compact" aria-hidden="true">
+          <a href="https://linkedin.com/in/ayoub-jerari" class="ic" target="_blank" rel="noopener">
+            <img src="img/logos/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="mailto:ayoubjerari47@gmail.com" class="ic">
+            <img src="img/logos/mail.png" alt="Email">
+          </a>
+          <a href="https://github.com/aybkh" class="ic" target="_blank" rel="noopener">
+            <img src="img/logos/github.png" alt="GitHub">
+          </a>
+          <a href="https://wa.me/4915211209573" class="ic" target="_blank" rel="noopener">
+            <img src="img/logos/whatsapp.webp" alt="WhatsApp">
+          </a>
+        </div>
+
+        <!-- Vista expandida con logos + texto -->
+        <nav class="contact-expanded" aria-label="Enlaces de contacto">
+          <a href="https://linkedin.com/in/ayoub-jerari" target="_blank" rel="noopener">
+            <img src="img/logos/linkedin.png" alt=""> LinkedIn
+          </a>
+          <a href="mailto:ayoubjerari47@gmail.com">
+            <img src="img/logos/mail.png" alt=""> Email
+          </a>
+          <a href="https://github.com/aybkh" target="_blank" rel="noopener">
+            <img src="img/logos/github.png" alt=""> GitHub
+          </a>
+          <a href="https://wa.me/4915211209573" target="_blank" rel="noopener">
+            <img src="img/logos/whatsapp.webp" alt=""> WhatsApp
+          </a>
+        </nav>
+      </div>
+    </section>
 
   </main>
 

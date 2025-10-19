@@ -106,3 +106,14 @@ if (langSel){
     // updateTexts(v)
   });
 }
+
+// Contacto: abrir/cerrar por tap
+const contactCard = document.querySelector('.contact-card');
+if (contactCard){
+  contactCard.addEventListener('click', ()=>{
+    if (window.matchMedia('(hover: none)').matches) {
+      contactCard.classList.toggle('open');
+    }
+  });
+}
+
