@@ -21,15 +21,15 @@
     <span class="label-compact">AYOUB JERARI</span>
 
     <nav class="label-expanded pill-nav" aria-label="Navegación">
-        <a href="#experiencia">Experiencia</a>
-        <a href="#skills">Skills</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
+        <a href="#experiencia" data-i18n="nav.experience">Experiencia</a>
+        <a href="#skills" data-i18n="nav.skills">Skills</a>
+        <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
     </nav>
     <select id="langSelect" class="lang" aria-label="Idioma">
-        <option value="ca">CAT</option>
         <option value="es" selected>ES</option>
         <option value="en">EN</option>
+        <option value="ca">CAT</option>
         <option value="fr">FR</option>
         <option value="de">DE</option>
     </select>
@@ -42,11 +42,11 @@
     <section class="hero">
       <div class="hero-grid">
         <div class="hero-text">
-          <h1>Hola, soy <span class="accent">Ayoub Jerari</span></h1>
-          <p class="lead">Especialista en soporte y administración IT, con experiencia en entornos corporativos y públicos. Gestiono sistemas Linux y Windows, redes, Microsoft 365, hardware y bases de datos, asegurando operaciones estables y eficientes. Me motiva resolver incidencias técnicas y mejorar la experiencia del usuario.</p>
+          <h1><span data-i18n="hero.title_prefix">Hola, soy </span><span class="accent"> Ayoub Jerari</span></h1>
+          <p class="lead" data-i18n="hero.subtitle">Especialista en soporte y administración IT, con experiencia en entornos corporativos y públicos. Gestiono sistemas Linux y Windows, redes, Microsoft 365, hardware y bases de datos, asegurando operaciones estables y eficientes. Me motiva resolver incidencias técnicas y mejorar la experiencia del usuario.</p>
           <div class="cta">
-            <a class="btn" href="#proyectos">Ver proyectos</a>
-            <a class="btn ghost" href="CV.pdf" target="_blank" rel="noopener">Descargar CV</a>
+            <a class="btn" href="#proyectos" data-i18n="cta.view">Ver proyectos</a>
+            <a class="btn ghost" href="CV.pdf" target="_blank" rel="noopener" data-i18n="cta.cv">Descargar CV</a>
           </div>
 
           <!-- Logos de tecnologías principales -->
@@ -70,7 +70,7 @@
 
 <!-- EXPERIENCIA: dos cajas -->
 <section id="experiencia" class="section">
-  <h2>Experiencia</h2>
+  <h2 data-i18n="exp">Experiencia</h2>
   <div class="grid exp-grid">
 
     <!-- HIPRA -->
@@ -79,21 +79,21 @@
         <div class="exp-info">
             <h3>Laboratorios HIPRA, S.A.</h3>
             <p class="muted">Amer / Aiguaviva, Girona</p>
-            <p class="muted">Junio 2025 - Presente</p>
+            <p class="muted" data-i18n="exp.e1_place">Junio 2025 - Presente</p>
         </div>
         <div class="exp-role">
-          <span class="badge">IT Workplace Intern</span>
+          <span class="badge" data-i18n="exp.e1_role">IT Workplace Intern</span>
           <img src="img/logos/hipra.png" alt="HIPRA" class="exp-logo">
         </div>
       </header>
       <ul class="tasks">
-        <li>Soporte técnico de segundo nivel (hardware, software y conectividad).</li>
-        <li>Gestión de incidencias mediante Remedy y SmartIT.</li>
-        <li>Preparación y despliegue de equipos (portátiles, IGEL, periféricos).</li>
-        <li>Configuración de móviles iOS/Android, teléfonos Cisco y escáneres.</li>
-        <li>Configuración de impresoras RFID y térmicas (Zebra, Honeywell).</li>
-        <li>Gestión de garantías, reparaciones y coordinación con proveedores.</li>
-        <li>Colaboración en políticas de seguridad, parches y actualizaciones.</li>
+        <li data-i18n="exp.e1_t1">Soporte técnico de segundo nivel (hardware, software y conectividad).</li>
+        <li data-i18n="exp.e1_t2">Gestión de incidencias mediante Remedy y SmartIT.</li>
+        <li data-i18n="exp.e1_t3">Preparación y despliegue de equipos (portátiles, IGEL, periféricos).</li>
+        <li data-i18n="exp.e1_t4">Configuración de móviles iOS/Android, teléfonos Cisco y escáneres.</li>
+        <li data-i18n="exp.e1_t5">Configuración de impresoras RFID y térmicas (Zebra, Honeywell).</li>
+        <li data-i18n="exp.e1_t6">Gestión de garantías, reparaciones y coordinación con proveedores.</li>
+        <li data-i18n="exp.e1_t7">Colaboración en políticas de seguridad, parches y actualizaciones.</li>
       </ul>
     </article>
 
@@ -103,20 +103,20 @@
         <div class="exp-info">
           <h3>Ajuntament de Malgrat de Mar</h3>
           <p class="muted">Malgrat de Mar, Barcelona</p>
-          <p class="muted">Noviembre 2023 – Abril 2024</p>
+          <p class="muted" data-i18n="exp.e2_place">Noviembre 2023 – Abril 2024</p>
         </div>
         <div class="exp-role">
-          <span class="badge">IT Helpdesk Intern</span>
+          <span class="badge" data-i18n="exp.e2_role">IT Helpdesk Intern</span>
           <img src="img/logos/amm.svg" alt="Ajuntament de Malgrat de Mar" class="exp-logo">
         </div>
       </header>
       <ul class="tasks">
-        <li>Soporte técnico presencial y remoto para personal municipal.</li>
-        <li>Instalación y mantenimiento de equipos y periféricos.</li>
-        <li>Administración básica de sistemas y permisos de usuario.</li>
-        <li>Uso de herramientas Linux para diagnóstico y resolución de fallos.</li>
-        <li>Documentación de procedimientos y creación de guías de usuario.</li>
-        <li>Preparación y despliegue de equipos (PCs, portátiles, periféricos).</li>
+        <li data-i18n="exp.e2_t1">Soporte técnico presencial y remoto para personal municipal.</li>
+        <li data-i18n="exp.e2_t2">Instalación y mantenimiento de equipos y periféricos.</li>
+        <li data-i18n="exp.e2_t3">Administración básica de sistemas y permisos de usuario.</li>
+        <li data-i18n="exp.e2_t4">Uso de herramientas Linux para diagnóstico y resolución de fallos.</li>
+        <li data-i18n="exp.e2_t5">Documentación de procedimientos y creación de guías de usuario.</li>
+        <li data-i18n="exp.e2_t6">Preparación y despliegue de equipos (PCs, portátiles, periféricos).</li>
       </ul>
     </article>
 
@@ -125,14 +125,14 @@
 
 
 <section id="skills" class="section">
-  <h2>Skills</h2>
+  <h2 data-i18n="sk">Skills</h2>
 
   <div class="skills-pills">
     <!-- Redes -->
     <button class="skill-pill" aria-expanded="false">
       <div class="pill-left">
         <img src="img/logos/Network.png" alt="" aria-hidden="true">
-        <span class="pill-title">Redes</span>
+        <span class="pill-title" data-i18n="skills.net">Redes</span>
       </div>
       <div class="pill-body">
         <img src="img/logos/dns.png" alt="DNS" loading="lazy">
@@ -150,7 +150,7 @@
     <button class="skill-pill" aria-expanded="false">
       <div class="pill-left">
         <img src="img/logos/os.png" alt="Operating Systems" aria-hidden="true">
-        <span class="pill-title">Sistemas</span>
+        <span class="pill-title" data-i18n="skills.sys">Sistemas</span>
       </div>
       <div class="pill-body">
         <img src="img/logos/linux.png" alt="Linux" loading="lazy">
@@ -168,7 +168,7 @@
     <button class="skill-pill" aria-expanded="false">
       <div class="pill-left">
         <img src="img/logos/cloud.png" alt="" aria-hidden="true">
-        <span class="pill-title">Cloud</span>
+        <span class="pill-title" data-i18n="skills.cloud.title">Cloud</span>
       </div>
       <div class="pill-body">
         <img src="img/logos/Amazon.png" alt="AWS" loading="lazy">
@@ -186,7 +186,7 @@
     <button class="skill-pill" aria-expanded="false">
       <div class="pill-left">
         <img src="img/logos/code.png" alt="" aria-hidden="true">
-        <span class="pill-title">Coding</span>
+        <span class="pill-title" data-i18n="skills.code">Programación</span>
       </div>
       <div class="pill-body">
         <img src="img/logos/html-css.webp" alt="HTML5-CSS3" loading="lazy">
@@ -204,7 +204,7 @@
     <button class="skill-pill" aria-expanded="false">
       <div class="pill-left">
         <img src="img/logos/Database.png" alt="" aria-hidden="true">
-        <span class="pill-title">BBDD</span>
+        <span class="pill-title" data-i18n="skills.db">BBDD</span>
       </div>
       <div class="pill-body">
         <img src="img/logos/sql.png" alt="SQL" loading="lazy">
@@ -240,7 +240,7 @@
     <button class="skill-pill" aria-expanded="false">
       <div class="pill-left">
         <img src="img/logos/productivity.png" alt="" aria-hidden="true">
-        <span class="pill-title">Productivity</span>
+        <span class="pill-title" data-i18n="skills.prod">Productividad</span>
       </div>
       <div class="pill-body">
         <img src="img/logos/Microsoft_Project.png" alt="Microsoft Project" loading="lazy">
@@ -258,7 +258,7 @@
     <button class="skill-pill" aria-expanded="false">
       <div class="pill-left">
         <img src="img/logos/virtualization.png" alt="" aria-hidden="true">
-        <span class="pill-title">Hardware <br/> Virtualización</span>
+        <span class="pill-title" data-i18n="skills.hwvirt">Hardware <br/> Virtualización</span>
       </div>
       <div class="pill-body">
         <img src="img/logos/vmware.png" alt="VMware" loading="lazy">
@@ -276,7 +276,7 @@
     <button class="skill-pill" aria-expanded="false">
       <div class="pill-left">
         <img src="img/logos/language.png" alt="" aria-hidden="true">
-        <span class="pill-title">Idiomas</span>
+        <span class="pill-title" data-i18n="skills.langs">Idiomas</span>
       </div>
       <div class="pill-body">
         <img src="img/logos/AR.png" alt="AR" loading="lazy">
@@ -294,7 +294,7 @@
 
     <!-- PROYECTOS: dos cajas -->
     <section id="proyectos" class="section">
-      <h2>Proyectos</h2>
+      <h2 data-i18n="proj">Proyectos</h2>
       <div class="grid">
         <article class="card project">
           <img class="proj-img" src="img/project4.png" alt="Captura del Proyecto 4">
@@ -307,8 +307,8 @@
             <li><img src="img/logos/git_logo.png" alt="Git"></li>
             <li><img src="img/logos/github.png" alt="GitHub"></li>
           </ul>
-            <h3>iOS Glass Portfolio — Personal Web Project</h3>
-            <p>Portafolio personal inspirado en la interfaz de iOS26, desarrollado con HTML, CSS y JavaScript. Presenta experiencia profesional, habilidades y proyectos en un diseño moderno y responsivo. Incluye modo oscuro/claro, selección de idioma y una "Dynamic Island" interactiva para navegación.</p>
+            <h3 data-i18n="projects.project1.title">iOS Glass Portfolio — Personal Web Project</h3>
+            <p data-i18n="projects.project1.description">Portafolio personal inspirado en la interfaz de iOS26, desarrollado con HTML, CSS y JavaScript. Presenta experiencia profesional, habilidades y proyectos en un diseño moderno y responsivo. Incluye modo oscuro/claro, selección de idioma y una "Dynamic Island" interactiva para navegación.</p>
             <div class="row">
               <a class="btn" href="https://github.com/aybkh/Portafolio_iOS26" target="_blank" rel="noopener">GitHub</a>
             </div>
@@ -326,8 +326,8 @@
             <li><img src="img/logos/git_logo.png" alt="Git"></li>
             <li><img src="img/logos/github.png" alt="GitHub"></li>
           </ul>
-            <h3>Hotel Management System</h3>
-            <p>Aplicación completa para la gestión integral de una cadena hotelera. Incluye control de reservas, clientes, personal, servicios y auditoría de datos. Desarrollada en Python (Tkinter) con base de datos PostgreSQL, incorpora seguridad, alta disponibilidad, replicación, backups automatizados y exportaciones en JSON/PDF.</p>
+            <h3 data-i18n="projects.project2.title">Hotel Management System</h3>
+            <p data-i18n="projects.project2.description">Aplicación completa para la gestión integral de una cadena hotelera. Incluye control de reservas, clientes, personal, servicios y auditoría de datos. Desarrollada en Python (Tkinter) con base de datos PostgreSQL, incorpora seguridad, alta disponibilidad, replicación, backups automatizados y exportaciones en JSON/PDF.</p>
             <div class="row">
               <a class="btn" href="https://github.com/aybkh/HaramResorts" target="_blank" rel="noopener">GitHub</a>
             </div>
@@ -345,8 +345,8 @@
             <li><img src="img/logos/git_logo.png" alt="Git"></li>
             <li><img src="img/logos/github.png" alt="GitHub"></li>
           </ul>
-            <h3>ERAY Slasher – Roguelite Shooter</h3>
-            <p>Juego de acción ambientado en el siglo XVIII, protagonizado por ERAY, un personaje con habilidades mágicas para defender su hogar. Incluye tres tipos de enemigos con ataques distintos y objetos que mejoran las estadísticas del jugador. Desarrollado con Unity, disponible en formato ejecutable gratuito.</p>
+            <h3 data-i18n="projects.project3.title">ERAY Slasher – Roguelite Shooter</h3>
+            <p data-i18n="projects.project3.description">Juego de acción ambientado en el siglo XVIII, protagonizado por ERAY, un personaje con habilidades mágicas para defender su hogar. Incluye tres tipos de enemigos con ataques distintos y objetos que mejoran las estadísticas del jugador. Desarrollado con Unity, disponible en formato ejecutable gratuito.</p>
             <div class="row">
               <a class="btn" href="https://github.com/aybkh/ErAySlasher" target="_blank" rel="noopener">GitHub</a>
             </div>
@@ -364,8 +364,8 @@
             <li><img src="img/logos/git_logo.png" alt="Git"></li>
             <li><img src="img/logos/github.png" alt="GitHub"></li>
           </ul>
-            <h3>Spacecraft – Infinite Shooter Game</h3>
-            <p>Juego de acción en 2D desarrollado con Unity, donde los jugadores controlan una nave espacial que debe enfrentarse a oleadas de enemigos. El juego incluye power-ups y mejoras para la nave, así como un sistema de puntuación basado en la supervivencia y la destrucción de enemigos. Disponible en formato ejecutable gratuito.</p>
+            <h3 data-i18n="projects.project4.title">Spacecraft – Infinite Shooter Game</h3>
+            <p data-i18n="projects.project4.description">Juego de acción en 2D desarrollado con Unity, donde los jugadores controlan una nave espacial que debe enfrentarse a oleadas de enemigos. El juego incluye power-ups y mejoras para la nave, así como un sistema de puntuación basado en la supervivencia y la destrucción de enemigos. Disponible en formato ejecutable gratuito.</p>
             <div class="row">
               <a class="btn" href="https://github.com/aybkh/spacecraft" target="_blank" rel="noopener">GitHub</a>
             </div>
@@ -376,7 +376,7 @@
 
     <!-- CONTACTO: una caja con iconos -->
     <section id="contacto" class="section">
-      <h2>Contacto</h2>
+      <h2 data-i18n="contact">Contacto</h2>
 
       <div class="card contact-card" aria-live="polite">
         <!-- Vista compacta -->
