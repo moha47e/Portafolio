@@ -215,7 +215,7 @@ h1{font-size:clamp(28px,5vw,52px); margin:0}
 }
 
 /* ========== Proyectos ========== */
-.proj-img{width:100%; height:auto; object-fit:cover; border-radius:16px}
+.proj-img{width:100%; height:auto; object-fit:cover; border-radius:16px; border-color: #262157; border-style: solid; border-width: 1px; box-shadow:0 8px 24px rgba(0,0,0,.28), inset 0 1px 0 rgba(255,255,255,.04);}
 .project-body{padding:10px 2px 2px}
 
 /* ========== Contacto (logos + texto) ========== */
@@ -367,15 +367,15 @@ h1{font-size:clamp(28px,5vw,52px); margin:0}
   --muted: #3f4c63;      /* gris legible */
   --glass: rgba(0,0,0,0.05);
   --border: rgba(0,18,132,0.10);
-  --accent: #7c00b1;
-  --accent2:#3f009e;
+  --accent: #b300ff;
+  --accent2:#6600ff;
 }
 
 /* El fondo claro debe aplicarse al BODY, no solo al html */
 [data-theme="light"] body {
   background:
-    radial-gradient(1000px 600px at 15% -10%, #9771b8 0%, transparent 60%),
-    radial-gradient(900px 600px at 110% 30%, #6fadc3 0%, transparent 60%),
+    radial-gradient(1000px 600px at 15% -10%, #93aaf8 0%, transparent 60%),
+    radial-gradient(900px 600px at 110% 30%, #a3d3ff 0%, transparent 60%),
     linear-gradient(180deg, #d5e1ff 0%, #dce2ff 100%);
   background-attachment: fixed;
   color: var(--text);
