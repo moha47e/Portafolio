@@ -3,33 +3,27 @@
    ASIR Portfolio — iOS Glass UI (responsive + logo dinámico)
    ============================================================ */
 :root{
-  --bg:#0b0d12; --panel:#0f1420; --text:#eaf0ff; --muted:#9fb2d5;
+  --panel:#0f1420; --text:#eaf0ff; --muted:#d1e1ff;
   --glass:rgba(255,255,255,0.06); --border:rgba(255,255,255,0.16);
   --accent:#78e7ff; --accent2:#8b7bff; --radius:24px; --max:1120px;
-  --blur:18px; --shadow:0 10px 30px rgba(0,0,0,.35);
+  --blur:18px;
   --bp-tablet:900px; --bp-mobile:600px;
 }
-[data-theme="light"]{
-  --bg:#f6f7fb; --panel:#ffffff; --text:#0b0d12; --muted:#55627a;
-  --glass:rgba(0,0,0,0.05); --border:rgba(0,0,0,0.10);
-  --accent:#155bff; --accent2:#8b3dff;
-}
-body {
-  background:
-    radial-gradient(1200px 600px at 10% -10%, #162133 0%, transparent 60%),
-    radial-gradient(900px 500px at 100% 20%, #1c1834 0%, transparent 65%),
-    #0b0d12;
-}
+
 *{box-sizing:border-box}
 h3{display:block;font-size:1.17em;margin:1em 0;font-weight:bold;max-width:100%}
+
 body{
   margin:0; color:var(--text);
   font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text",Inter,Segoe UI,Roboto,Arial,sans-serif;
   line-height:1.6;
   background:
-    radial-gradient(1200px 500px at 10% -10%, #101a32 0%, transparent 60%),
-    radial-gradient(900px 420px at 120% 30%, #131b33 0%, transparent 55%),
-    var(--bg);
+    radial-gradient(1000px 600px at 15% -10%, #252d3c 0%, transparent 60%),
+    radial-gradient(900px 600px at 110% 30%, #262157 0%, transparent 60%),
+    linear-gradient(180deg, #10131b 0%, #0f111a 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  transition: background 0.6s ease, color 0.3s ease;
 }
 a{color:inherit; text-decoration:none}
 a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
@@ -159,7 +153,7 @@ h1{font-size:clamp(28px,5vw,52px); margin:0}
   background:var(--glass); backdrop-filter:saturate(140%) blur(12px);
   box-shadow:var(--shadow); transform:translateY(4px); transition:transform .25s ease, box-shadow .25s ease;
 }
-.card:hover{transform:translateY(0); box-shadow:0 14px 40px rgba(0,0,0,.35)}
+.card:hover{transform:translateY(0); box-shadow:0 14px 35px rgba(0,0,0,.35)}
 
 /* ========== Experiencia ========== */
 .exp-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
@@ -355,17 +349,6 @@ h1{font-size:clamp(28px,5vw,52px); margin:0}
   .switch{ transform:scale(.9); margin-left:6px; }
 }
 
-/* === Color automático de logos (opcional) === */
-/*
-img.logo, .logo-row img, .logo-grid img, .pill-body img, .socials img {
-  filter: brightness(0) invert(1); opacity:.9; transition: filter .25s ease, opacity .25s ease;
-}
-:root[data-theme="light"] img.logo,
-:root[data-theme="light"] .logo-row img,
-:root[data-theme="light"] .logo-grid img,
-:root[data-theme="light"] .pill-body img,
-:root[data-theme="light"] .socials img { filter:none; opacity:1; }
-*/
 /* Proyectos: 2 tarjetas por fila */
 #proyectos .grid{
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
@@ -378,10 +361,28 @@ img.logo, .logo-row img, .logo-grid img, .pill-body img, .socials img {
     grid-template-columns: 1fr !important;
   }
 }
-
-[data-theme="light"] .glass,
-[data-theme="light"] .card,
-[data-theme="light"] .pill {
-  backdrop-filter: blur(18px) saturate(180%);
+/* ===== Light mode real sobre BODY ===== */
+:root[data-theme="light"] {
+  --text: #0b0d12;       /* texto oscuro */
+  --muted: #3f4c63;      /* gris legible */
+  --glass: rgba(0,0,0,0.05);
+  --border: rgba(0,18,132,0.10);
+  --accent: #7c00b1;
+  --accent2:#3f009e;
 }
 
+/* El fondo claro debe aplicarse al BODY, no solo al html */
+[data-theme="light"] body {
+  background:
+    radial-gradient(1000px 600px at 15% -10%, #9771b8 0%, transparent 60%),
+    radial-gradient(900px 600px at 110% 30%, #6fadc3 0%, transparent 60%),
+    linear-gradient(180deg, #d5e1ff 0%, #dce2ff 100%);
+  background-attachment: fixed;
+  color: var(--text);
+  transition: background 0.6s ease, color 0.3s ease;
+}
+/* ===== FIX: fondo correcto del menú de idiomas ===== */
+[data-theme="light"] .lang option {
+  background: #ffffff;      /* fondo blanco */
+  color: #0b0d12;           /* texto oscuro */
+}
