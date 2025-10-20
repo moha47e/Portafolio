@@ -11,9 +11,9 @@
 }
 [data-theme="light"] body {
   background:
-    radial-gradient(1200px 700px at 15% -10%, #93d4ff 0%, transparent 60%),
-    radial-gradient(900px 600px at 100% 30%, #ffb5c5 0%, transparent 65%),
-    linear-gradient(180deg, #d7e4ff 0%, #ffd1f0 100%);
+    radial-gradient(1200px 700px at 15% -10%, #a7dafd 0%, transparent 60%),
+    radial-gradient(900px 600px at 100% 30%, #ffd1db 0%, transparent 65%),
+    linear-gradient(180deg, #d7e4ff 0%, #ffd7f2 100%);
   background-attachment: fixed;
   color: var(--text);
   transition: background 0.6s ease, color 0.3s ease;
