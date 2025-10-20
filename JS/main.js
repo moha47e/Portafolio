@@ -231,7 +231,7 @@ const I18N = {
   },
   de:{
     nav:{projects:"Projekte",experience:"Erfahrung",skills:"Skills",contact:"Kontakt"},
-    hero:{title_prefix:"Hallo, ich bin", subtitle:"Spezialist für IT-Support und -Administration mit Erfahrung in Unternehmens- und öffentlichen Umgebungen. Ich verwalte Linux- und Windows-Systeme, Netzwerke, Microsoft 365, Hardware und Datenbanken und sorge für einen stabilen und effizienten Betrieb. Es motiviert mich, technische Probleme zu lösen und die Benutzererfahrung zu verbessern.},
+    hero:{title_prefix:"Hallo, ich bin", subtitle:"Spezialist für IT-Support und -Administration mit Erfahrung in Unternehmens- und öffentlichen Umgebungen. Ich verwalte Linux- und Windows-Systeme, Netzwerke, Microsoft 365, Hardware und Datenbanken und sorge für einen stabilen und effizienten Betrieb. Es motiviert mich, technische Probleme zu lösen und die Benutzererfahrung zu verbessern."},
     cta:{view:"Projekte ansehen",cv:"Lebenslauf herunterladen"},
     sections:{exp:"Erfahrung",sk:"Skills",proj:"Projekte",contact:"Kontakt"},
     exp:{
