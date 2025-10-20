@@ -54,5 +54,7 @@ IT Support & Workplace Services
 ---
 
 ## 🖼️ Vista previa
-<img width="1902" height="904" alt="Image" src="https://github.com/user-attachments/assets/f7807b67-d3ce-4d13-b70e-1df0a1498336" />
+<img width="1896" height="581" alt="Image" src="https://github.com/user-attachments/assets/acc719b4-2b2d-4917-9023-05646b71483e" />
+<img width="1900" height="743" alt="Image" src="https://github.com/user-attachments/assets/ee1d4ac1-b7e8-4cf7-b37a-6e29a93e2fc6" />
+<img width="1897" height="939" alt="Image" src="https://github.com/user-attachments/assets/2596e447-6797-43f5-bc9b-52e424036b27" />
 
