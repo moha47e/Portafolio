@@ -9,11 +9,13 @@
   --blur:18px; --shadow:0 10px 30px rgba(0,0,0,.35);
   --bp-tablet:900px; --bp-mobile:600px;
 }
-[data-theme="light"]{
-  --bg:#b9c7ff; --panel:#ffffff; --text:#0b0d12; --muted:#000000;
-  --glass:rgba(0,0,0,0.05); --border:rgba(0,0,0,0.10);
-  --accent:#3a75ff; --accent2:#ab74ff;
+[data-theme="light"] body {
+  background: 
+    radial-gradient(1200px 600px at 15% -10%, #b6e7ff 0%, transparent 60%),
+    radial-gradient(900px 500px at 100% 20%, #ffd0d8 0%, transparent 65%),
+    #f6f8fc;
 }
+
 *{box-sizing:border-box}
 h3{display:block;font-size:1.17em;margin:1em 0;font-weight:bold;max-width:100%}
 body{
@@ -372,3 +374,10 @@ img.logo, .logo-row img, .logo-grid img, .pill-body img, .socials img {
     grid-template-columns: 1fr !important;
   }
 }
+
+[data-theme="light"] .glass,
+[data-theme="light"] .card,
+[data-theme="light"] .pill {
+  backdrop-filter: blur(18px) saturate(180%);
+}
+
