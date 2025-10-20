@@ -119,7 +119,7 @@ const I18N = {
       e2_t5:"Documentación de procedimientos y guías de usuario.",
       e2_t6:"Preparación y despliegue de equipos."
     },
-    skills:{net:"Redes",sys:"Sistemas",cloud:"Cloud",code:"Programación",db:"BBDD",prod:"Productividad",hwvirt:"Hardware / <br> Virtualización",langs:"Idiomas"},
+    skills:{net:"Redes",sys:"Sistemas",cloud:"Cloud",code:"Programación",db:"BBDD",prod:"Productividad",hwvirt:"Virtualización",langs:"Idiomas"},
     projects:{
       p1_title:"iOS Glass Portfolio — Proyecto personal",
       p1_desc:"Portafolio inspirado en iOS26 con HTML, CSS y JS. Modo oscuro/claro, selector de idioma y Dynamic Island como navegación.",
@@ -132,7 +132,7 @@ const I18N = {
   },
   en: {
     nav:{projects:"Projects",experience:"Experience",skills:"Skills",contact:"Contact"},
-    hero:{title_prefix:"Hi, I'm", subtitle:"IT support and systems admin. Linux/Windows, networks, Microsoft 365, hardware and databases. Focused on reliability and user experience."},
+    hero:{title_prefix:"Hi, I'm", subtitle:"IT support and administration specialist with experience in corporate and public environments. I manage Linux and Windows systems, networks, Microsoft 365, hardware, and databases, ensuring stable and efficient operations. I am motivated by resolving technical issues and improving the user experience."},
     cta:{view:"View projects",cv:"Download CV"},
     sections:{exp:"Experience",sk:"Skills",proj:"Projects",contact:"Contact"},
     exp:{
@@ -152,20 +152,20 @@ const I18N = {
       e2_t5:"Process documentation and user guides.",
       e2_t6:"Device staging and rollout."
     },
-    skills:{net:"Networking",sys:"Systems",cloud:"Cloud",code:"Programming",db:"Databases",prod:"Productivity",hwvirt:"Hardware / <br> Virtualization",langs:"Languages"},
+    skills:{net:"Networking",sys:"Systems",cloud:"Cloud",code:"Programming",db:"Databases",prod:"Productivity",hwvirt:"Virtualization",langs:"Languages"},
     projects:{
       p1_title:"iOS Glass Portfolio — Personal project",
-      p1_desc:"iOS26-inspired portfolio with HTML, CSS and JS. Dark/Light, language switch and Dynamic Island nav.",
-      p2_desc:"Hotel management app with Python + PostgreSQL. Reservations, users, security, replication and automated backups.",
-      p3_desc:"Action game with enemies and character upgrades. Built in Unity.",
-      p4_desc:"2D shooter with power-ups, scoring and waves. Built in Unity.",
+      p1_desc:"Personal portfolio inspired by the iOS26 interface, developed with HTML, CSS, and JavaScript. Presents professional experience, skills, and projects in a modern and responsive design. Includes dark/light mode, language selection, and an interactive ‘Dynamic Island’ for navigation.",
+      p2_desc:"Complete application for the integral management of a hotel chain. Includes control of reservations, customers, staff, services, and data auditing. Developed in Python (Tkinter) with a PostgreSQL database, it incorporates security, high availability, replication, automated backups, and exports in JSON/PDF.",
+      p3_desc:"Action game set in the 18th century, starring ERAY, a character with magical abilities to defend his home. Includes three types of enemies with different attacks and items that improve the player's statistics. Developed with Unity, available in free executable format.",
+      p4_desc:"2D action game developed with Unity, where players control a spaceship that must face waves of enemies. The game includes power-ups and upgrades for the ship, as well as a scoring system based on survival and enemy destruction. Available in free executable format.",
       github:"GitHub"
     },
     contact:{linkedin:"LinkedIn",email:"Email",github:"GitHub",whatsapp:"WhatsApp"}
   },
   ca:{
     nav:{projects:"Projectes",experience:"Experiència",skills:"Habilitats",contact:"Contacte"},
-    hero:{title_prefix:"Hola, sóc", subtitle:"Suport IT i administració de sistemes. Linux/Windows, xarxes i Microsoft 365."},
+    hero:{title_prefix:"Hola, sóc", subtitle:"Especialista en suport i administració IT, amb experiència en entorns corporatius i públics. Gestiono sistemes Linux i Windows, xarxes, Microsoft 365, maquinari i bases de dades, assegurant operacions estables i eficients. Em motiva resoldre incidències tècniques i millorar l'experiència de l'usuari."},
     cta:{view:"Veure projectes",cv:"Descarregar CV"},
     sections:{exp:"Experiència",sk:"Habilitats",proj:"Projectes",contact:"Contacte"},
     exp:{
@@ -185,7 +185,7 @@ const I18N = {
       e2_t5:"Documentació de processos.",
       e2_t6:"Preparació i desplegament d'equips."
     },
-    skills:{net:"Xarxes",sys:"Sistemes",cloud:"Cloud",code:"Programació",db:"BBDD",prod:"Productivitat",hwvirt:"Maquinari / <br> Virtualització",langs:"Idiomes"},
+    skills:{net:"Xarxes",sys:"Sistemes",cloud:"Cloud",code:"Programació",db:"BBDD",prod:"Productivitat",hwvirt:"Virtualització",langs:"Idiomes"},
     projects:{
       p1_title:"iOS Glass Portfolio — Projecte personal",
       p1_desc:"Portafolis inspirat en iOS26 amb HTML, CSS i JS.",
@@ -198,7 +198,7 @@ const I18N = {
   },
   fr:{
     nav:{projects:"Projets",experience:"Expérience",skills:"Compétences",contact:"Contact"},
-    hero:{title_prefix:"Salut, je suis", subtitle:"Support IT et admin systèmes. Linux/Windows, réseaux et Microsoft 365."},
+    hero:{title_prefix:"Salut, je suis", subtitle:"Spécialiste en assistance et administration informatique, avec une expérience dans les environnements d'entreprise et publics. Je gère les systèmes Linux et Windows, les réseaux, Microsoft 365, le matériel et les bases de données, en garantissant des opérations stables et efficaces. Je suis motivé par la résolution des incidents techniques et l'amélioration de l'expérience utilisateur."},
     cta:{view:"Voir les projets",cv:"Télécharger le CV"},
     sections:{exp:"Expérience",sk:"Compétences",proj:"Projets",contact:"Contact"},
     exp:{
@@ -218,7 +218,7 @@ const I18N = {
       e2_t5:"Documentation et guides.",
       e2_t6:"Préparation et déploiement."
     },
-    skills:{net:"Réseaux",sys:"Systèmes",cloud:"Cloud",code:"Programmation",db:"Bases de données",prod:"Productivité",hwvirt:"Hardware / <br> Virtualisation",langs:"Langues"},
+    skills:{net:"Réseaux",sys:"Systèmes",cloud:"Cloud",code:"Programmation",db:"Bases de données",prod:"Productivité",hwvirt:"Virtualisation",langs:"Langues"},
     projects:{
       p1_title:"iOS Glass Portfolio — Projet personnel",
       p1_desc:"Portfolio inspiré d’iOS26 en HTML/CSS/JS.",
@@ -231,7 +231,7 @@ const I18N = {
   },
   de:{
     nav:{projects:"Projekte",experience:"Erfahrung",skills:"Skills",contact:"Kontakt"},
-    hero:{title_prefix:"Hallo, ich bin", subtitle:"IT-Support und Systemadministration. Linux/Windows, Netzwerke und Microsoft 365."},
+    hero:{title_prefix:"Hallo, ich bin", subtitle:"Spezialist für IT-Support und -Administration mit Erfahrung in Unternehmens- und öffentlichen Umgebungen. Ich verwalte Linux- und Windows-Systeme, Netzwerke, Microsoft 365, Hardware und Datenbanken und sorge für einen stabilen und effizienten Betrieb. Es motiviert mich, technische Probleme zu lösen und die Benutzererfahrung zu verbessern.},
     cta:{view:"Projekte ansehen",cv:"Lebenslauf herunterladen"},
     sections:{exp:"Erfahrung",sk:"Skills",proj:"Projekte",contact:"Kontakt"},
     exp:{
@@ -251,7 +251,7 @@ const I18N = {
       e2_t5:"Dokumentation und Anleitungen.",
       e2_t6:"Gerätevorbereitung und Rollout."
     },
-    skills:{net:"Netzwerke",sys:"Systeme",cloud:"Cloud",code:"Programmierung",db:"Datenbanken",prod:"Produktivität",hwvirt:"Hardware / Virtualisierung",langs:"Sprachen"},
+    skills:{net:"Netzwerke",sys:"Systeme",cloud:"Cloud",code:"Programmierung",db:"Datenbanken",prod:"Produktivität",hwvirt:"Virtualisierung",langs:"Sprachen"},
     projects:{
       p1_title:"iOS Glass Portfolio — Eigenes Projekt",
       p1_desc:"Von iOS26 inspiriertes Portfolio in HTML/CSS/JS.",
