@@ -288,3 +288,10 @@ if (langSel){
 } else {
   i18nSet(prefLang);
 }
+// Redirección a página de error si el enlace no tiene destino válido
+document.querySelectorAll('a[href="#"], a[href=""]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    window.location.href = 'error.html';
+  });
+});

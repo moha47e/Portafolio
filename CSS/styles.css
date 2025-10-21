@@ -395,3 +395,27 @@ h1{font-size:clamp(28px,5vw,52px); margin:0}
   background: #ffffff;      /* fondo blanco */
   color: #0b0d12;           /* texto oscuro */
 }
+.made-in {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 18px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: color-mix(in oklab, var(--glass) 85%, var(--panel));
+  backdrop-filter: blur(12px);
+  font-weight: 600;
+  color: var(--text);
+  transition: transform .2s ease, box-shadow .25s ease;
+}
+
+.made-in img {
+  width: 90px;
+  height: auto;
+  object-fit: contain;
+}
+
+.made-in:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,.25);
+}
