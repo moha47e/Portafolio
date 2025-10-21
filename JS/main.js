@@ -7,14 +7,21 @@ const root = document.documentElement;
 const themeBtn = document.getElementById('themeToggle');
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) root.setAttribute('data-theme', savedTheme);
-if (themeBtn){
-  themeBtn.addEventListener('click', (e)=>{
+if (themeBtn) {
+  themeBtn.addEventListener('click', e => {
     e.stopPropagation();
     const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
     root.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);
+    const icon = themeBtn.querySelector('i');
+    icon.textContent = next === 'light' ? '' : '';
   });
+
+  // set icon at load
+  const current = root.getAttribute('data-theme') || 'dark';
+  themeBtn.querySelector('i').textContent = current === 'light' ? '' : '';
 }
+
 
 /* Helpers */
 const island = document.getElementById('island');
