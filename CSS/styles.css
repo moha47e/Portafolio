@@ -77,6 +77,8 @@ a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
   transform:translateY(-50%) translateX(6px);
   opacity:0; pointer-events:none; white-space:nowrap;
   transition:opacity .2s ease, transform .2s ease;
+  font-size: 22px; font-weight: 700;
+  background:linear-gradient(45deg,var(--accent),var(--accent2)); -webkit-background-clip:text; background-clip:text; color:transparent
 }
 /* Nav oculto por defecto */
 .label-expanded{
@@ -114,11 +116,35 @@ a:focus-visible{outline:2px solid var(--accent); outline-offset:2px}
 .island.open .dot{opacity:0; transform:scale(0.5);}
 .island.open .brand-logo{opacity:1; transform:translateY(-50%) scale(1);}
 
-.switch{position:relative; inline-size:48px; block-size:26px; border-radius:999px;
-  border:1px solid var(--border); background:var(--glass); backdrop-filter:blur(10px);
-  margin-left:4px; flex-shrink:0}
-.switch i{position:absolute; top:50%; left:3px; inline-size:20px; block-size:20px; border-radius:50%;
-  transform:translateY(-50%); background:linear-gradient(45deg,var(--accent),var(--accent2)); transition:left .25s ease}
+.switch {
+  position: relative;
+  inline-size: 48px;
+  block-size: 26px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--glass);
+  backdrop-filter: blur(10px);
+  margin-left: 4px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.switch i {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  inline-size: 20px;
+  block-size: 20px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #fff;
+  background: linear-gradient(45deg, var(--accent), var(--accent2));
+  transition: left .25s ease, background .25s ease;
+}
 :root[data-theme="light"] .switch i{left:25px}
 
 /* ========== Layout general ========== */
@@ -423,4 +449,10 @@ h1{font-size:clamp(28px,5vw,52px); margin:0}
   box-shadow: 0 8px 24px rgba(0,0,0,.25);
   background: rgba(242, 239, 239, 0.17);
   backdrop-filter: blur(12px);
+}
+/* Ícono sol/luna dinámico */
+:root[data-theme='light'] .switch i {
+  left: 25px;
+  color: #222;
+  background: linear-gradient(45deg, #ffe600, #ddb100);
 }
